@@ -1,19 +1,15 @@
 {
-  "extends": ["../../../.eslintrc.json"],
+  "extends": ["../../.eslintrc.json"],
   "ignorePatterns": ["!**/*"],
   "overrides": [
     {
       "files": ["*.ts"],
-      "extends": [
-        "plugin:@nrwl/nx/angular",
-        "plugin:@angular-eslint/template/process-inline-templates"
-      ],
       "rules": {
         "@angular-eslint/directive-selector": [
           "error",
           {
             "type": "attribute",
-            "prefix": "app",
+            "prefix": "bitcoinTodo",
             "style": "camelCase"
           }
         ],
@@ -21,11 +17,15 @@
           "error",
           {
             "type": "element",
-            "prefix": "app",
+            "prefix": "bitcoin-todo",
             "style": "kebab-case"
           }
         ]
-      }
+      },
+      "extends": [
+        "plugin:@nrwl/nx/angular",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ]
     },
     {
       "files": ["*.html"],

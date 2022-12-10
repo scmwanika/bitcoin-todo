@@ -15,10 +15,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'bitcoin-todo-web'`, () => {
+  it(`should have as title 'bitcoin-todo'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('bitcoin-todo-web');
+    expect(app.title).toEqual('bitcoin-todo');
   });
 
   it('should render title', () => {
@@ -26,7 +26,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Welcome bitcoin-todo-web'
+      'Welcome bitcoin-todo'
     );
   });
 });

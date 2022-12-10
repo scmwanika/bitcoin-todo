@@ -3,7 +3,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 /* eslint-disable */
 
 @Component({
-  selector: 'app-nx-welcome',
+  selector: 'bitcoin-todo-nx-welcome',
   template: `
     <!--
      * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -433,7 +433,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
         <div id="welcome">
           <h1>
             <span> Hello there, </span>
-            Welcome bitcoin-todo-web 👋
+            Welcome bitcoin-todo 👋
           </h1>
         </div>
 
@@ -586,7 +586,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
               </svg>
             </a>
             <a
-              href="https://nx.dev/angular-tutorial/01-create-application?utm_source=nx-project"
+              href="https://nx.dev/angular-tutorial/1-code-generation?utm_source=nx-project"
               target="_blank"
               rel="noreferrer"
               class="list-item-link"

@@ -1,7 +1,7 @@
 /* eslint-disable */
 export default {
-  displayName: 'bitcoin-todo-web',
-  preset: '../../../jest.preset.js',
+  displayName: 'bitcoin-todo',
+  preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/packages/bitcoin-todo/web',
+  coverageDirectory: '../../coverage/apps/bitcoin-todo',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },
